@@ -131,18 +131,34 @@ html {
 }
 body {
   background-color: #0F2539;
+  overflow-x: hidden;
 }
 .container {
   background-color: whitesmoke;
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
 }
 .landing {
   width: 100%;
   height: 100vh;
   padding: 40px;
-  color: grey;
-  background: linear-gradient(to right, #71dcfd 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.9) 100%), url(/img/atoz-landing.jpg);
+  color: black;
+  background-image: url(/img/atoz-landing3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  font-size: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  padding-right: 50px;
 }
