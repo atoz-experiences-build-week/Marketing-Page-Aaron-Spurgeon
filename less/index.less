@@ -142,15 +142,34 @@ html {
 }
 
 body {
-    background-color: #0F2539;
+    background-color: whitesmoke;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     background-color: whitesmoke;
-    width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
-    
+}
+
+a {
+    text-decoration: none;
+    color: #66666E;
+    background:
+        linear-gradient(to bottom, #DA6426 0%,
+            #FFB973 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    text-decoration: none;
+    transition: background-size  .4s;
+
+
+    &:hover {
+        background-size: 4px 50px;
+        color: whitesmoke;
+    }
 }
 
 // HEADER
@@ -160,7 +179,7 @@ body {
     height: 100vh;
     padding: 40px;
     color: black;
-    background-image: url(/img/atoz-landing3.jpg);
+    background-image: linear-gradient(to bottom, rgba(113, 220, 253, 0.404) 0%, rgba(179, 235, 255, 0.205)), url(/img/atoz-landing3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -173,13 +192,41 @@ header {
 
     h2 {
         font-size: 2rem;
+        font-weight: 300;
     }
 
     a {
         text-decoration: none;
         color: black;
         font-size: .8rem;
-        padding-right: 50px;
+        margin-right: 50px;
+        font-weight: 300;
+    }
+}
+
+.landing-top {
+    margin-top: 200px;
+    margin-left: 100px;
+    
+    text-align: left;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        // line-height: 2;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin-left: 175px;
     }
 }
 
