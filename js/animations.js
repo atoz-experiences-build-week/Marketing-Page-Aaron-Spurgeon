@@ -25,6 +25,27 @@ TweenMax.staggerFrom("nav a", 1, {
     ease: Expo.easeInOut
 }, 0.3);
 
+TweenMax.from(".landing-top h1", 2, {
+    delay: 3.2,
+    opacity: 0,
+    x: -40,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".landing-top p", 2, {
+    delay: 3.6,
+    opacity: 0,
+    x: -40,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".landing-top button", 2, {
+    delay: 4,
+    opacity: 0,
+    x: -40,
+    ease: Expo.easeInOut
+});
+
 
 
 
