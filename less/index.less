@@ -150,24 +150,26 @@ body {
 
 
 
-a {
-    text-decoration: none;
-    color: #66666E;
-    background:
-        linear-gradient(to bottom, #DA6426 0%,
-            #FFB973 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 1px 1px;
-    text-decoration: none;
-    transition: background-size .4s;
+// a {
+//     text-decoration: none;
+//     color: #66666E;
+    
+//     background:
+//         linear-gradient(to bottom, #DA6426 0%,
+//             #FFB973 100%);
+//     background-position: 0 100%;
+//     background-repeat: repeat-x;
+//     background-size: 1px 1px;
+//     text-decoration: none;
+//     transition: all .4s;
 
 
-    &:hover {
-        background-size: 4px 50px;
-        color: whitesmoke;
-    }
-}
+//     &:hover {
+//         background-size: 4px 50px;
+//         color: black;
+//         transform: translateY(10px);
+//     }
+// }
 
 // HEADER
 
@@ -179,7 +181,16 @@ a {
     background: linear-gradient(to right, rgba(81, 178, 207, 0.7) 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.6) 100%), url(../img/unsplash.jpg) no-repeat 50% 50%;
     background-size: cover;
 
-
+    i {
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        padding: 15px 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        
+    }
 }
 
 header {
@@ -190,14 +201,22 @@ header {
 
 
     nav {
-        margin-left: 350px;
+        margin-left: 300px;
 
         a {
             text-decoration: none;
             color: white;
+            display: inline-block;
             font-size: 1.2rem;
             margin-right: 50px;
+            margin-top: 20px;
             font-weight: 400;
+            padding-bottom: 20px;
+            
+            &:hover {
+                border-bottom: 1px solid white;
+                
+            }
         }
     }
 
@@ -236,6 +255,13 @@ header {
         letter-spacing: 4px;
         font-weight: 700;
         align-self: flex-start;
+        // transition: all .3s;
+
+        &:hover {
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+        }
     }
 }
 
@@ -264,5 +290,6 @@ header {
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
+        opacity: 0;
     }
 }
