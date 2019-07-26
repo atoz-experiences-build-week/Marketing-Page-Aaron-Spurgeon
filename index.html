@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1f807018f5.js"></script>
+    <!-- Required Core stylesheet -->
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme stylesheet -->
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <title>A to Z Experiences</title>
 </head>
 
@@ -48,37 +53,18 @@
             <a class="icon-link" href="#destinations"><i class="fas fa-arrow-down fa-3x"></i></a>
         </section>
 
-        <section id="destinations">
-            <div id="slider-wrapper">
-                <div class="row">
-                    <h3>Recommended</h3>
-                    <div class="display-slider">
-                        <div class="slider-div one">1</div>
-                        <div class="slider-div two">2</div>
-                        <div class="slider-div three">3</div>
-                        <div class="slider-div four">4</div>
-                        <div class="slider-div five">5</div>
-                        <div class="slider-div six">6</div>
-                    </div>
-                </div>
+        <div id="destinations" class="glide">
+            <div data-glide-el="track" class="glide_track">
+                <ul class="glide_slides">
+                    <li class="glide_slide">hi</li>
+                    <li class="glide_slide">hi</li>
+                    <li class="glide_slide">hi</li>
+                    <li class="glide_slide">hi</li>
+                    <li class="glide_slide">hi</li>
+                    <li class="glide_slide">hi</li>
+                </ul>
             </div>
-
-        </section>
-
-        <!-- <section id="destinations">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img class="slider-img start" src="./img/destination1.jpg" alt="place1">
-                    <img class="slider-img" src="./img/destination2.jpg" alt="place2">
-                    <img class="slider-img" src="./img/destination3.jpg" alt="place3">
-                    <img class="slider-img" src="./img/destination4.jpg" alt="place4">
-                    <img class="slider-img" src="./img/destination5.jpg" alt="place5">
-                    <img class="slider-img" src="./img/destination6.jpg" alt="place6">
-                    <div class="slider-button--next"></div>
-                    <div class="slider-button--previous"></div>
-                </div>
-            </div>
-        </section> -->
+        </div>
 
     </div>
 
