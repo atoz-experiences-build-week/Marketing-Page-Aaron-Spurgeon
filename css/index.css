@@ -281,7 +281,7 @@ header nav a:hover {
 #destinations .glide .glide__slide img {
   object-fit: cover;
   width: 100%;
-  height: 400px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(37, 37, 37, 0.548);
 }
@@ -311,7 +311,32 @@ header nav a:hover {
   border-radius: 5px;
 }
 .about-landing {
-  background: linear-gradient(to right, rgba(81, 178, 207, 0.7) 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.6) 100%), url(../img/atoz-landing2.jpg) no-repeat 50% 50%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(81, 178, 207, 0.7) 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.6) 100%), url(../img/woman-landing.jpg) no-repeat 50% 50%;
   background-size: cover;
   color: black;
+}
+.about-landing .about-title {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  color: white;
+  text-align: left;
+}
+.about-landing .about-title h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.about-landing .about-title p {
+  width: 60%;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
