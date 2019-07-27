@@ -238,11 +238,30 @@ header nav a:hover {
   height: 100vh;
   background-color: whitesmoke;
 }
-#destinations h2 {
-  font-size: 1.75rem;
+#destinations .destinations-text {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   position: relative;
   top: 16%;
-  left: 4.7%;
+  color: black;
+}
+#destinations .destinations-text h2 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: 9px;
+  border-bottom: 0.5px solid black;
+  width: fit-content;
+}
+#destinations .destinations-text p {
+  font-size: 1.3rem;
+  line-height: 2;
+  letter-spacing: 2px;
 }
 #destinations .glide {
   width: 90%;
