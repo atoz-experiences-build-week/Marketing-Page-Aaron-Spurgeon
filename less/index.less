@@ -224,7 +224,7 @@ header {
 
 .landing-top {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-content: center;
     text-align: center;
     position: absolute;
@@ -296,13 +296,12 @@ header {
 
 // destinations section
 #destinations {
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    background-color: whitesmoke;
-
-
+    margin: 0 auto;
+ 
     .destinations-text {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-flow: column nowrap;
@@ -331,8 +330,8 @@ header {
     }
 
     .glide {
-        width: 90%;
-        height: 200px;
+        width: 100%;
+        height: 250px;
         position: relative;
         top: 20%;
         margin: 0 auto;
@@ -358,7 +357,11 @@ header {
             }
 
             p {
-                padding-top: 15px;
+                padding-top: 12px;
+                padding-bottom: 10px;
+                font-size: 1.3rem;
+                font-weight: 300;
+                letter-spacing: 2px;
             }
         }
 
@@ -387,4 +390,15 @@ header {
         }
     }
 
+}
+
+
+
+// ABOUT PAGE CSS
+
+.about-landing {
+    background: linear-gradient(to right, rgba(81, 178, 207, 0.7) 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.6) 100%), url(../img/atoz-landing2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+
+    color: black;
 }
