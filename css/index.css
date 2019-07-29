@@ -381,6 +381,6 @@ header nav a:hover {
   height: 100%;
   backface-visibility: hidden;
 }
-#about-img .flip-card:hover {
+#about-img .flip-card:hover .img-flip {
   transform: rotateY(180deg);
 }
