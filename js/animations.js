@@ -77,6 +77,20 @@ TweenMax.from(".landing .button-text", 2, {
     ease: Expo.easeInOut
 });
 
+TweenMax.from(".about-title h1", 2, {
+    delay: 3.2,
+    opacity: 0,
+    x: -40,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".about-title p", 2, {
+    delay: 3.6,
+    opacity: 0,
+    x: -40,
+    ease: Expo.easeInOut
+});
+
 
 
 
