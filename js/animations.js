@@ -70,6 +70,13 @@ TweenMax.from(".landing i", 2, {
     ease: Expo.easeInOut
 });
 
+TweenMax.from(".landing .button-text", 2, {
+    delay: 3.4,
+    opacity: 0,
+    y: 40,
+    ease: Expo.easeInOut
+});
+
 
 
 

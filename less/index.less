@@ -428,4 +428,58 @@ header {
             line-height: 1.5;
         }
     }
+
+    .button-text {
+        text-align: center;
+        position: relative;
+        top: 81.5%;
+    }
+}
+
+
+#about-img {
+    // margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+
+        .img-flip {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            // transform: rotateY(180deg);
+
+            .img-front {
+                background-color: #bbb;
+                color: black;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+
+            .img-back {
+                background-color: dodgerblue;
+                color: white;
+                transform: rotateY(180deg);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+        }
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+    }
 }
