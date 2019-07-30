@@ -4,6 +4,10 @@
     height: 200px;
     background-color: #0C1524;
 
+    @media @phone {
+        width: 100%;
+    }
+
     .bottom-flex {
         display: flex;
         justify-content: space-between;
@@ -14,6 +18,11 @@
         width: 75%;
         margin: 0 auto;
         padding-top: 65px;
+
+        @media @phone {
+            flex-flow: column wrap;
+            padding: 0;
+        }
 
         .bottom-nav {
             display: flex;
