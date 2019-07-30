@@ -134,6 +134,14 @@ body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+p {
+  font-size: 1.6rem;
+}
 .bottom {
   height: 200px;
   background-color: #0C1524;
@@ -169,6 +177,12 @@ body {
   background: linear-gradient(to right, rgba(81, 178, 207, 0.7) 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.6) 100%), url(../img/unsplash.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  .landing {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .landing i {
   position: absolute;
   top: 83%;
@@ -178,14 +192,35 @@ body {
   border-radius: 50%;
   color: white;
 }
+@media (max-width: 500px) {
+  .landing i {
+    display: none;
+  }
+}
 header {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header .nav-title svg {
+    display: none;
+  }
+}
 header nav {
   margin-left: 300px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -200,6 +235,17 @@ header nav a {
 header nav a:hover {
   border-bottom: 1px solid white;
 }
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .landing-top {
   display: flex;
   flex-flow: column wrap;
@@ -211,15 +257,34 @@ header nav a:hover {
   color: white;
   text-align: left;
 }
+@media (max-width: 500px) {
+  .landing-top {
+    width: 100%;
+    top: 45%;
+    left: 5%;
+    text-align: center;
+    align-items: center;
+  }
+}
 .landing-top h1 {
   font-size: 5rem;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .landing-top h1 {
+    font-size: 3rem;
+  }
 }
 .landing-top p {
   letter-spacing: 1px;
   font-weight: 300;
   font-size: 2.5rem;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .landing-top p {
+    font-size: 1.5rem;
+  }
 }
 .landing-top button {
   border: none;
@@ -236,6 +301,11 @@ header nav a:hover {
   background: transparent;
   color: white;
 }
+@media (max-width: 500px) {
+  .landing-top button {
+    align-self: center;
+  }
+}
 .loader {
   z-index: 1;
   position: absolute;
@@ -243,6 +313,11 @@ header nav a:hover {
   height: 120vh;
   background: whitesmoke;
   top: 0%;
+}
+@media (max-width: 500px) {
+  .loader {
+    width: 110%;
+  }
 }
 .loader h1 {
   position: absolute;
@@ -253,6 +328,12 @@ header nav a:hover {
   font-weight: bolder;
   letter-spacing: 5px;
 }
+@media (max-width: 500px) {
+  .loader h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .loader .loader-svg {
   position: absolute;
   top: 30%;
@@ -260,10 +341,23 @@ header nav a:hover {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
+@media (max-width: 500px) {
+  .loader .loader-svg {
+    width: 200px;
+    height: auto;
+    top: 40%;
+  }
+}
 #destinations {
   width: 80%;
   height: 100vh;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #destinations {
+    width: 100%;
+    padding-left: 17px;
+  }
 }
 #destinations .destinations-text {
   width: 100%;
@@ -285,10 +379,20 @@ header nav a:hover {
   border-bottom: 0.5px solid black;
   width: fit-content;
 }
+@media (max-width: 500px) {
+  #destinations .destinations-text h2 {
+    text-align: center;
+  }
+}
 #destinations .destinations-text p {
   font-size: 1.3rem;
   line-height: 2;
   letter-spacing: 2px;
+}
+@media (max-width: 500px) {
+  #destinations .destinations-text p {
+    text-align: center;
+  }
 }
 #destinations .glide {
   width: 100%;
@@ -357,7 +461,7 @@ header nav a:hover {
   width: 35%;
   background-color: #5FB6D0;
   border-radius: 10px;
-  height: 45vh;
+  height: auto;
   margin: 0 auto;
   padding: 5% 2%;
   position: relative;
@@ -367,7 +471,6 @@ header nav a:hover {
 .more .info p {
   width: 80%;
   text-align: left;
-  font-size: 1.7rem;
   font-weight: 100;
   float: right;
   line-height: 1.2;
@@ -433,7 +536,7 @@ header nav a:hover {
 .about-landing .button-text {
   text-align: center;
   position: relative;
-  top: 45%;
+  top: 50%;
 }
 #about-img {
   width: 100%;
