@@ -126,6 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -133,10 +139,11 @@ body {
   background-color: #DCDCDC;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 @media (max-width: 500px) {
-  .container {
-    width: 100%;
+  body {
+    position: relative;
   }
 }
 p {
@@ -171,6 +178,11 @@ p {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .bottom .bottom-flex .bottom-nav {
+    margin-left: 50px;
+  }
+}
 .bottom .bottom-flex .bottom-nav a {
   color: white;
   padding-right: 40px;
@@ -179,6 +191,11 @@ p {
 .bottom .bottom-flex .social-media i {
   color: white;
   margin-right: 15px;
+}
+@media (max-width: 500px) {
+  .bottom .bottom-flex .social-media i {
+    margin-right: 0;
+  }
 }
 .landing {
   width: 100%;
@@ -232,6 +249,7 @@ header nav {
   header nav {
     width: 100%;
     margin-left: 0;
+    margin-bottom: 70px;
   }
 }
 header nav a {
@@ -250,7 +268,8 @@ header nav a:hover {
 @media (max-width: 500px) {
   header nav a {
     width: 100%;
-    margin-right: 0;
+    position: relative;
+    right: 28px;
     margin-top: 0;
     display: flex;
     justify-content: center;
@@ -272,10 +291,8 @@ header nav a:hover {
 @media (max-width: 500px) {
   .landing-top {
     width: 100%;
-    top: 45%;
-    left: 5%;
+    position: initial;
     text-align: center;
-    align-items: center;
   }
 }
 .landing-top h1 {
@@ -285,6 +302,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   .landing-top h1 {
     font-size: 3rem;
+    margin-right: 70px;
   }
 }
 .landing-top p {
@@ -296,6 +314,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   .landing-top p {
     font-size: 1.5rem;
+    margin-right: 70px;
   }
 }
 .landing-top button {
@@ -316,6 +335,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   .landing-top button {
     align-self: center;
+    margin-right: 70px;
   }
 }
 .loader {
@@ -329,6 +349,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   .loader {
     width: 110%;
+    text-align: center;
   }
 }
 .loader h1 {
@@ -343,7 +364,6 @@ header nav a:hover {
 @media (max-width: 500px) {
   .loader h1 {
     font-size: 1rem;
-    text-align: center;
   }
 }
 .loader .loader-svg {
@@ -368,7 +388,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   #destinations {
     width: 100%;
-    padding-left: 17px;
+    padding: 2%;
   }
 }
 #destinations .destinations-text {
