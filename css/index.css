@@ -134,6 +134,33 @@ body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
+.bottom {
+  height: 200px;
+  background-color: #0C1524;
+}
+.bottom .bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-weight: 300;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+.bottom .bottom-flex .bottom-nav {
+  display: flex;
+  flex-direction: row;
+}
+.bottom .bottom-flex .bottom-nav a {
+  color: white;
+  padding-right: 40px;
+  text-decoration: none;
+}
+.bottom .bottom-flex .social-media i {
+  color: white;
+  margin-right: 15px;
+}
 .landing {
   width: 100%;
   height: 100vh;
@@ -144,7 +171,7 @@ body {
 }
 .landing i {
   position: absolute;
-  top: 87%;
+  top: 83%;
   left: 50%;
   padding: 15px 20px;
   border: 1px solid white;
@@ -312,6 +339,7 @@ header nav a:hover {
 }
 .more {
   margin-top: 150px;
+  padding-bottom: 150px;
   background: whitesmoke;
   width: 100%;
   height: 100vh;
@@ -355,7 +383,7 @@ header nav a:hover {
   align-self: flex-start;
   float: right;
   position: relative;
-  right: 25%;
+  right: 35%;
 }
 .more .info button:hover {
   border: 1px solid white;
@@ -373,32 +401,6 @@ header nav a:hover {
   top: 35%;
   right: 95%;
 }
-.bottom {
-  height: 200px;
-  background-color: #0C1524;
-}
-.bottom .bottom-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  font-weight: 300;
-  width: 75%;
-  margin: 0 auto;
-}
-.bottom .bottom-flex .bottom-nav {
-  display: flex;
-  flex-direction: row;
-}
-.bottom .bottom-flex .bottom-nav a {
-  color: white;
-  padding-right: 40px;
-  text-decoration: none;
-}
-.bottom .bottom-flex .social-media i {
-  color: white;
-  margin-right: 15px;
-}
 .about-landing {
   width: 100%;
   background: linear-gradient(to right, rgba(81, 178, 207, 0.7) 0%, rgba(7, 126, 170, 0.8) 30%, rgba(2, 4, 5, 0.3) 50%, rgba(22, 43, 51, 0.6) 100%), url(../img/woman-landing.jpg) no-repeat 50% 50%;
@@ -409,8 +411,9 @@ header nav a:hover {
 .about-landing .about-title {
   display: flex;
   flex-flow: column wrap;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  margin-left: 200px;
+  top: 30%;
   color: white;
   text-align: left;
 }
@@ -421,7 +424,7 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 .about-landing .about-title p {
-  width: 60%;
+  width: 45%;
   font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: 2px;
@@ -430,14 +433,16 @@ header nav a:hover {
 .about-landing .button-text {
   text-align: center;
   position: relative;
-  top: 81.5%;
+  top: 45%;
 }
 #about-img {
   width: 100%;
-  height: 80vh;
+  height: auto;
+  margin-bottom: 200px;
 }
 #about-img h1 {
   margin: 0 auto;
+  text-align: center;
   font-size: 3rem;
   width: 90%;
   letter-spacing: 3px;
@@ -455,6 +460,7 @@ header nav a:hover {
   background-color: transparent;
   width: 300px;
   height: 300px;
+  margin-bottom: 20px;
   perspective: 1000px;
 }
 #about-img .flip-card .img-flip {
