@@ -1,21 +1,4 @@
-var glide = new Glide('.glide', {
-    type: 'carousel',
-    perView: 5,
-    focusAt: 'center',
-    breakpoints: {
-      1200: {
-          perView: 3
-      },
-      800: {
-        perView: 2
-      },
-      480: {
-        perView: 1
-      }
-    }
-  })
-  
-  glide.mount();
+
 
   // STICKY NAVBAR USING VANILLA JAVASCRIPT
 
@@ -24,6 +7,7 @@ var glide = new Glide('.glide', {
 
   function fixNav () {
     if (window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = nav.offsetHeight;
         document.body.classList.add('fixed-nav');
     } else {
         document.body.classList.remove('fixed-nav');
