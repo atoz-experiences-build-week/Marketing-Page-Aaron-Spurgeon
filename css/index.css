@@ -384,6 +384,7 @@ header nav a:hover {
 @media (max-width: 500px) {
   .loader h1 {
     font-size: 1rem;
+    left: 47%;
   }
 }
 .loader .loader-svg {
@@ -398,6 +399,7 @@ header nav a:hover {
     width: 200px;
     height: auto;
     top: 40%;
+    left: 47%;
   }
 }
 #destinations {
